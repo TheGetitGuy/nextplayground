@@ -1,11 +1,10 @@
 import fs from 'fs'
 import path from 'path'
 import Markdown from 'markdown-to-jsx';
-
-const toRender = <></>
+ 
 
 const Static = ({ sluggies }) => {
-     const markdownToRender = <Markdown>{sluggies}</Markdown>
+     const markdownToRender = (<div className={"window-body"}><Markdown >{sluggies}</Markdown></div>)
     
     
     
